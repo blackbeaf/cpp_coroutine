@@ -1,0 +1,21 @@
+package pbtest;
+
+message Head
+{
+    optional uint32 seq = 1;
+    optional bytes data = 2;
+}
+
+message DataReq
+{
+    optional uint32 cmd = 1;
+    optional uint32 query = 2;
+}
+
+message DataRsp
+{
+    optional uint32 cmd = 1;
+    optional uint32 data = 2;
+    optional string msg = 3;
+}
+
